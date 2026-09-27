@@ -1,7 +1,3 @@
-Since Google Cloud Run requires a billing credit card, I want to deploy my Python Flask webhook on a completely free alternative like Render.com.
-
-Here is my code for `app.py`:
-
 import imaplib
 import email
 from flask import Flask
@@ -47,8 +43,3 @@ def get_signal():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
-
-Please do the following:
-1. Provide the `requirements.txt` file (I need gunicorn and Flask).
-2. Give me the easiest, step-by-step instructions on how to host this code for free on Render.com (using Web Services) without needing a credit card.
-3. Show me how to set the Start Command (e.g., gunicorn app:app) so I can get my live URL for my MT4 EA.
